@@ -43,3 +43,7 @@ const areaCirculo = (radioCirculo*radioCirculo)*PI;
 console.log(`El área del circulo es: ${areaCirculo}`);
 
 console.groupEnd();
+
+function name(lado) {
+    return lado *9;
+}
