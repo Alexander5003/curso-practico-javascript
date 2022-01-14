@@ -7,7 +7,7 @@ let comparaciones=0;
 let tamaño = desordenado.length;
 
 
-/* while (ordenado.length<tamaño) {
+while (ordenado.length<tamaño) {
     for (const comparador of desordenado) {
         for (const comparado of desordenado) {
             if (comparador>comparado) {
@@ -27,8 +27,4 @@ let tamaño = desordenado.length;
         }
         comparaciones=0;
     }
-} */
-
-desordenado.sort(function (a,b) {
-    return a-b;
-});
+}
