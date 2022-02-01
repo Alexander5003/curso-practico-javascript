@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+}
+
+:root{
+    /*Colores brou*/
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    /*Tamaños de letras*/
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+
+.container{
+    height: 100%;
+    width: 100vw;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.formulario{
+    background-color: slateblue;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.inputsForm{
+    margin: 2px 0 1rem 0;
+    border-radius: 4px;
+    border: none;
+    height: 2rem;
+}
+
+.tiposInteres{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.checkInteres{
+    width: 2rem;
+}
+
+.Info{
+    height: 10rem;
+    width: 16rem;
+    position: absolute;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    top: -12rem;
+}
+
+.conpuestoInfo{
+    background-color: red;
+    right: -8rem;
+    display: none;
+
+}
+
+.simpleInfo{
+    background-color: blueviolet;
+    left: 8.5rem;
+    display: none;
+}
+
+.detalle{
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 2rem solid green;
+    border-right: 2rem solid transparent;
+    bottom: -2rem;
+}
+

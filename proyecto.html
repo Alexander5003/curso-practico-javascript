@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyecto.css">
+    <title>Calcular</title>
+</head>
+<body>
+    <section class="container">
+        <form class="formulario">
+            <label for="Cantidad" class="subs">Cantidad a pagar</label>
+            <input type="number" class="inputsForm" id="Cantidad">
+            
+            <label for="pagos" class="subs">Numero de pagos</label>
+            <input type="number" class="inputsForm" id="pagos">
+
+            <p>Selecicone el tipo de interes</p>
+            <div class="tiposInteres">
+
+                <div class="conpuestoInfo Info" id="CInfo"><div class="detalle"></div></div>
+                <div class="simpleInfo Info" id="SInfo"><div class="detalle"></div></div>
+                
+                <div class="simple">
+                    <label for="simple" class="subs" id="simple">Simple</label>
+                    <input type="radio" class="checkInteres" id="simple" name="intereses" checked>
+                </div>
+                <div class="compuesto">
+                    <label for="compuesto" class="subs">compuesto</label>
+                    <input type="radio" class="checkInteres" id="compuesto" name="intereses">
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="./proyecto.js"></script>
+</body>
+</html>
