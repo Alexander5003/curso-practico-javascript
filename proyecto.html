@@ -19,19 +19,36 @@
             <p>Selecicone el tipo de interes</p>
             <div class="tiposInteres">
 
-                <div class="conpuestoInfo Info" id="CInfo"><div class="detalle"></div></div>
-                <div class="simpleInfo Info" id="SInfo"><div class="detalle"></div></div>
-                
+                <div class="conpuestoInfo Info" id="CInfo">
+                    <p class="contenidoInfo">Este interes es acumulativo y se va sumando a la cantidad por lo que este interes sera mayor con el paso del tiempo.</p>
+                    <div class="detalle"></div>
+                </div>
+                <div class="simpleInfo Info" id="SInfo">
+                    <p class="contenidoInfo">Este interes se mantendra y no habra variaciones con el paso del tiempo, este interes ser el mimso hasta cancelar la deuda.</p>
+                    <div class="detalle"></div>
+                </div>
+
                 <div class="simple">
-                    <label for="simple" class="subs" id="simple">Simple</label>
-                    <input type="radio" class="checkInteres" id="simple" name="intereses" checked>
+                    <label for="CheckSimple" class="subs" id="simple">Simple</label>
+                    <input type="radio" class="checkInteres" id="CheckSimple" name="intereses" checked>
                 </div>
                 <div class="compuesto">
-                    <label for="compuesto" class="subs">compuesto</label>
-                    <input type="radio" class="checkInteres" id="compuesto" name="intereses">
+                    <label for="CheckCompuesto" class="subs" id="compuesto">compuesto</label>
+                    <input type="radio" class="checkInteres" id="CheckCompuesto" name="intereses">
                 </div>
             </div>
+            <button type="button" id="calcular" class="calcular">Calcular</button>
         </form>
+        <section class="estiloRespuestas" id="sectionVamos">
+            <table class="tablaRespuesta" id="vamos">
+                <tr>
+                    <td>No. Pago</td>
+                    <td>Interes</td>
+                    <td>Fracción a pagar</td>
+                    <td>Monto a pagar</td>
+                </tr>
+            </table>
+        </section>
     </section>
     <script src="./proyecto.js"></script>
 </body>
