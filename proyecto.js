@@ -3,6 +3,16 @@ let infoSimple = document.getElementById('SInfo');
 let infoCompuesto = document.getElementById('CInfo');
 let resultados = document.getElementById('vamos');
 let marcosResultados = document.getElementById('sectionVamos');
+
+//Valores
+let cantidad = document.getElementById('cantidad');
+let pagos = document.getElementById('pagos');
+
+//Resultados
+let interes;
+let pago;
+let pagado;
+
 //Boton
 let calcular = document.getElementById('calcular');
 
@@ -51,4 +61,13 @@ function mostrar(e) {
     marcosResultados.style.padding = '2rem';
     resultados.style.backgroundColor = '#ff847c';
     resultados.innerHTML += '<tr><td>joder que bueno</td><td>haber que pasa ahora</td></tr>';
+interesSimple();
+}
+
+
+function interesSimple() {
+    let cantidadN = Number(cantidad.value);
+    let pagosN = Number(pagos.value);
+
+    interes=
 }
