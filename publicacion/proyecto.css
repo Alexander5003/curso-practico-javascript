@@ -117,7 +117,7 @@ body{
 }
 
 .estiloRespuestas{
-    background-color: red;
+    background-color: #f4f1bb;
     display: flex;
     justify-content: center;
     margin-top: 2rem;
