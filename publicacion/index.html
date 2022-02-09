@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proyecto.css">
+    <title>Calcular</title>
+</head>
+<body>
+    <section class="container">
+        <form class="formulario">
+            <label for="Cantidad" class="subs">Cantidad a pagar</label>
+            <input type="number" class="inputsForm" id="cantidad">
+            
+            <label for="pagos" class="subs">Numero de pagos</label>
+            <input type="number" class="inputsForm" id="pagos">
+
+            <label for="interes" class="subs">Interes a cobrar</label>
+            <input type="number" class="inputsForm" id="interes">
+
+            <p>Selecicone el tipo de interes</p>
+            <div class="tiposInteres">
+
+                <div class="conpuestoInfo Info" id="CInfo">
+                    <p class="contenidoInfo">Este interes es acumulativo y se va sumando a la cantidad por lo que este interes sera mayor con el paso del tiempo.</p>
+                    <div class="detalle"></div>
+                </div>
+                <div class="simpleInfo Info" id="SInfo">
+                    <p class="contenidoInfo">Este interes se mantendra y no habra variaciones con el paso del tiempo, este interes ser el mimso hasta cancelar la deuda.</p>
+                    <div class="detalle"></div>
+                </div>
+
+                <div class="simple">
+                    <label for="CheckSimple" class="subs" id="simple">Simple</label>
+                    <input type="radio" class="checkInteres" id="CheckSimple" name="intereses" checked>
+                </div>
+                <div class="compuesto">
+                    <label for="CheckCompuesto" class="subs" id="compuesto">compuesto</label>
+                    <input type="radio" class="checkInteres" id="CheckCompuesto" name="intereses">
+                </div>
+            </div>
+            <button type="button" id="calcular" class="calcular">Calcular</button>
+        </form>
+        <section class="estiloRespuestas" id="sectionVamos">
+            <table class="tablaRespuesta" id="vamos">
+            </table>
+        </section>
+    </section>
+    <script src="./proyecto.js"></script>
+</body>
+</html>

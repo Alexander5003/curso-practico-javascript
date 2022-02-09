@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+:root{
+    /*Colores brou*/
+    --white: #FFFFFF;
+    --black: #000000;
+    --green: #99b898;
+    --melon: #fecea8;
+    --dentro-melon: #ff847c;
+    --rojo-fuerte: #e84a5f;
+    --dark: #2a363b;
+    /*Tamaños de letras*/
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5rem;
+    background-color: var(--dark);
+}
+
+
+.container{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    padding-top: 10rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario{
+    background-color: var(--dentro-melon);
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.inputsForm{
+    margin: 2px 0 1rem 0;
+    border-radius: 4px;
+    border: none;
+    height: 2rem;
+}
+
+.tiposInteres{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.checkInteres{
+    width: 2rem;
+}
+
+.Info{
+    height: 10rem;
+    width: 20rem;
+    position: absolute;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    top: -12rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+}
+
+.conpuestoInfo{
+    background-color: var(--melon);
+    right: -12rem;
+
+}
+
+.simpleInfo{
+    background-color: var(--melon);
+    left: 8.5rem;
+}
+
+.contenidoInfo{
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.detalle{
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 2rem solid var(--melon);
+    border-right: 2rem solid transparent;
+    bottom: -2rem;
+    left: 0;
+}
+
+.calcular{
+    transition: 1s;
+    margin-top: 3rem;
+    height: 4rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #ffc145;
+}
+
+.calcular:hover{
+    transition: 1s;
+    background-color: #fffffb;
+}
+
+.estiloRespuestas{
+    background-color: #f4f1bb;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.tablaRespuesta{
+    margin-top: 0rem;
+}
